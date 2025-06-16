@@ -619,6 +619,12 @@
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
     </group>
+    <group name="Division De Depositos" parentPath="/acme">
+      <displayName>Depositos</displayName>
+    </group>
+    <group name="Red de Agencias del Banco de la Naci&#xf3;n" parentPath="/acme">
+      <displayName>Agencia</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
