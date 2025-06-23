@@ -565,6 +565,9 @@
     <role name="evaluadorInmobiliario">
       <displayName>Evaluador Inmobiliario</displayName>
     </role>
+    <role name="atencionAlCliente">
+      <displayName>Atencion al Cliente</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -724,7 +727,7 @@
     </membership>
     <membership>
       <userName>daniela.angelo</userName>
-      <roleName>member</roleName>
+      <roleName>atencionAlCliente</roleName>
       <groupName>europe</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
     </membership>
