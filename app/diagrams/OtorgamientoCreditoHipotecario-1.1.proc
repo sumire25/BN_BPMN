@@ -22,12 +22,12 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_z17w6E_rEfCWZoltaJkuFg" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_z17w6k_rEfCWZoltaJkuFg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_z17w6U_rEfCWZoltaJkuFg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <inputMappings xmi:type="process:InputMapping" xmi:id="_PWdtsE_sEfCWZoltaJkuFg" subprocessTarget="var" assignationType="Data">
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_PWdtsE_sEfCWZoltaJkuFg" subprocessTarget="solicitudCredito" assignationType="Data">
             <processSource xmi:type="expression:Expression" xmi:id="_PWdtsU_sEfCWZoltaJkuFg" name="solicitudCredito" content="solicitudCredito" type="TYPE_VARIABLE" returnType="com.company.model.SolicitudCredito">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_QUxJAE_sEfCWZoltaJkuFg" name="solicitudCredito" dataType="_EijHFE_mEfCWZoltaJkuFg" className="com.company.model.SolicitudCredito"/>
             </processSource>
           </inputMappings>
-          <calledActivityName xmi:type="expression:Expression" xmi:id="_z17w5E_rEfCWZoltaJkuFg" name="Pool1" content="Pool1" returnTypeFixed="true"/>
+          <calledActivityName xmi:type="expression:Expression" xmi:id="_z17w5E_rEfCWZoltaJkuFg" name="Evaluacion del Cliente" content="Evaluacion del Cliente" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_z17w5U_rEfCWZoltaJkuFg" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:CallActivity" xmi:id="_5twocFACEfCWZoltaJkuFg" name="Evaluacion del inmueble" outgoing="_PFn96FADEfCWZoltaJkuFg" incoming="_-wLZcFACEfCWZoltaJkuFg">
