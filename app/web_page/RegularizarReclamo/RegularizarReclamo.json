@@ -1,10 +1,10 @@
 {
-  "id" : "DELETEFORM",
-  "name" : "DELETEFORM",
+  "id" : "RegularizarReclamo",
+  "name" : "RegularizarReclamo",
   "type" : "form",
-  "uuid" : "d5010725-4311-4184-a27e-064db7bdee6f",
+  "uuid" : "b9e1bfcc-fe2d-46d4-b668-174df1bb987d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751214300647,
+  "lastUpdate" : 1751219779924,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "c15b555a-66bb-4059-9aac-aa8da460dd7a",
+        "reference" : "8d84a714-ee66-4d79-815b-0454404348c4",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -42,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Validar Reclamo"
+                  "value" : "{{ task.displayName }}"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -51,13 +51,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
                 }
               },
-              "reference" : "10f80fc7-a1fd-4fb3-8400-3dc802151aae",
+              "reference" : "e5cdfd06-3b1e-431b-a6d1-7966f1d70261",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -105,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "ee1553c9-7442-4421-bbd6-e32a67c39d2d",
+              "reference" : "51e788c1-65fc-4e26-ad9f-d7664e69ee0b",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -121,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "bfa9c4b2-a538-486d-bc69-ab43e640add4",
+        "reference" : "9e2725c2-dbc0-488c-97e3-72f3777ecab0",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -130,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "727d232f-549c-4107-982a-6d9bd0098144",
+          "reference" : "7b1eaf03-d059-48dd-a601-dc87ef5c2ad5",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -169,7 +165,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "f097df08-c7d4-4d31-8304-cab600c1cd58",
+                "reference" : "6c1dcae8-4fcc-4a0f-a3a4-3c7a4ada206f",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -201,7 +197,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "8ef0f755-f342-4e21-b46e-59787e3cd773",
+                "reference" : "e7f3d317-890b-43ad-bf31-a8497b955d7f",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -215,42 +211,57 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!reclamo.reclamoId"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Reclamo Id"
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{reclamo.reclamoId}}"
+                        "placeholder" : {
+                          "type" : "constant"
                         },
-                        "alignment" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.reclamoId"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "956769d8-b58a-4001-99ac-bb42dbbfc9ca",
+                      "reference" : "6989093f-d3d1-4ff8-87f8-6a12b5d9db40",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ],
@@ -264,42 +275,57 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!reclamo.descripcion"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Descripcion"
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{reclamo.descripcion}}"
+                        "placeholder" : {
+                          "type" : "constant"
                         },
-                        "alignment" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.descripcion"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "d2c362a5-d515-45b4-b9bc-1261c99c890a",
+                      "reference" : "0013cc1b-6a78-4af7-a3de-007e8d20bcbe",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ],
@@ -313,42 +339,57 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!reclamo.canalIncidencia"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Canal Incidencia"
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{reclamo.canalIncidencia}}"
+                        "placeholder" : {
+                          "type" : "constant"
                         },
-                        "alignment" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.canalIncidencia"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "03ceed9b-be01-4630-a8ba-8d568b501497",
+                      "reference" : "3f41bb33-fddf-405a-a4f7-26614614f2dc",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ],
@@ -362,42 +403,114 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "dateFormat" : {
+                          "type" : "constant",
+                          "value" : "MM/dd/yyyy"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Fecha Reclamo"
+                        },
+                        "type" : {
+                          "type" : "constant"
+                        },
+                        "required" : {
                           "type" : "constant",
                           "value" : true
                         },
+                        "todayLabel" : {
+                          "type" : "constant",
+                          "value" : "Today"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "showToday" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Enter a date (mm/dd/yyyy)"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.fechaReclamo"
+                        }
+                      },
+                      "reference" : "4875e9a4-ec82-42c7-a424-e38c8f35502e",
+                      "hasValidationError" : false,
+                      "id" : "pbDatePicker",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!reclamo.fechaReclamo"
+                          "value" : "!reclamo.enProceso"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Fecha Reclamo"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{reclamo.fechaReclamo|uiDate}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
+                          "value" : "En Proceso"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.enProceso"
                         }
                       },
-                      "reference" : "890a45cd-6121-4152-8dcf-6d6b57145817",
+                      "reference" : "f9ac2275-1d57-43bd-8ef3-041cc4ee99ed",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbCheckbox",
                       "description" : ""
                     }
                   ],
@@ -438,17 +551,9 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "reclamo.aceptado"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "eba9902d-2783-42ce-b00d-b7bd3e263a15",
+                      "reference" : "2a8e9427-2659-40ca-8be9-0634f946e363",
                       "hasValidationError" : false,
                       "id" : "pbCheckbox",
                       "description" : ""
@@ -464,42 +569,57 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!reclamo.nombreCliente"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Nombre Cliente"
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{reclamo.nombreCliente}}"
+                        "placeholder" : {
+                          "type" : "constant"
                         },
-                        "alignment" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.nombreCliente"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "055a1430-14d6-4cac-96b7-2f5812ad4d79",
+                      "reference" : "d36a70b8-aced-4d17-b20b-3f814f2a0573",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ],
@@ -513,42 +633,57 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!reclamo.dniCliente"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Dni Cliente"
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{reclamo.dniCliente}}"
+                        "placeholder" : {
+                          "type" : "constant"
                         },
-                        "alignment" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "number"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.dniCliente"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "1b768abb-f333-4c5e-9090-df7bed613d5c",
+                      "reference" : "78c9a476-887d-4954-af3d-34a04d466772",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ],
@@ -562,42 +697,57 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!reclamo.correoCliente"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
                         },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Correo Cliente"
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{reclamo.correoCliente}}"
+                        "placeholder" : {
+                          "type" : "constant"
                         },
-                        "alignment" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.correoCliente"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "348f53c3-59f0-497d-a223-6027dc2e5141",
+                      "reference" : "7ad7369d-34da-4a0a-bc2a-a42fc674c949",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ],
@@ -611,42 +761,57 @@
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
                         "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
                         "hidden" : {
-                          "type" : "expression",
-                          "value" : "!reclamo.telefonoCliente"
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
                         },
                         "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
                         "label" : {
                           "type" : "interpolation",
                           "value" : "Telefono Cliente"
                         },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{reclamo.telefonoCliente}}"
+                        "placeholder" : {
+                          "type" : "constant"
                         },
-                        "alignment" : {
+                        "type" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "text"
                         },
                         "dimension" : {
                           "type" : "constant",
                           "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "reclamo.telefonoCliente"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
-                      "reference" : "8167848b-05ef-4f5a-935f-586522ba9d46",
+                      "reference" : "624bfa8c-d32c-4d94-bc64-70320cb0d859",
                       "hasValidationError" : false,
-                      "id" : "pbText",
+                      "id" : "pbInput",
                       "description" : ""
                     }
                   ]
@@ -728,7 +893,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ae17730c-bdb5-4b0b-815e-f59d37ade914",
+                "reference" : "767d17fd-3fb3-44a2-96ab-abae4f352096",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -780,7 +945,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "4f1170d0-8113-450f-a69c-05bd7fef9a98",
+                "reference" : "e0e23723-d35d-4ca0-88b4-92736a641ea2",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -828,8 +993,15 @@
         "\treturn {",
         "\t\t//map reclamo variable to expected task contract input",
         "\t\treclamoInput: {",
-        "\t\t\tenProceso: $data.reclamo.enProceso !== undefined ? $data.reclamo.enProceso : null,",
-        "\t\t\taceptado: $data.reclamo.aceptado !== undefined ? $data.reclamo.aceptado : null",
+        "\t\t\treclamoId: $data.reclamo.reclamoId !== undefined ? $data.reclamo.reclamoId : null,",
+        "\t\t\tdescripcion: $data.reclamo.descripcion !== undefined ? $data.reclamo.descripcion : null,",
+        "\t\t\tcanalIncidencia: $data.reclamo.canalIncidencia !== undefined ? $data.reclamo.canalIncidencia : null,",
+        "\t\t\tfechaReclamo: $data.reclamo.fechaReclamo !== undefined ? $data.reclamo.fechaReclamo : null,",
+        "\t\t\taceptado: $data.reclamo.aceptado !== undefined ? $data.reclamo.aceptado : null,",
+        "\t\t\tnombreCliente: $data.reclamo.nombreCliente !== undefined ? $data.reclamo.nombreCliente : null,",
+        "\t\t\tdniCliente: $data.reclamo.dniCliente !== undefined ? $data.reclamo.dniCliente : null,",
+        "\t\t\tcorreoCliente: $data.reclamo.correoCliente !== undefined ? $data.reclamo.correoCliente : null,",
+        "\t\t\ttelefonoCliente: $data.reclamo.telefonoCliente !== undefined ? $data.reclamo.telefonoCliente : null",
         "\t\t}",
         "\t}",
         "}"
@@ -853,16 +1025,16 @@
   },
   "assets" : [
     {
-      "id" : "f8c23e70-6adb-4600-8d39-07f71d0fec65",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "532d1475-792b-4e41-bd4a-9b15f5c48cee",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "91cdc41a-cbba-423d-9f88-faffde46491b",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "82eabce5-0d4b-4681-a47e-5e53bf64281c",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
