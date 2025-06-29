@@ -698,7 +698,7 @@
     </membership>
     <membership>
       <userName>favio.riviera</userName>
-      <roleName>member</roleName>
+      <roleName>ejecutivoDeRiesgos</roleName>
       <groupName>marketing</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
@@ -734,7 +734,7 @@
     </membership>
     <membership>
       <userName>daniela.angelo</userName>
-      <roleName>member</roleName>
+      <roleName>asesorComercial</roleName>
       <groupName>europe</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
     </membership>
@@ -752,7 +752,7 @@
     </membership>
     <membership>
       <userName>giovanna.almeida</userName>
-      <roleName>member</roleName>
+      <roleName>gerenteDeAgencia</roleName>
       <groupName>latin_america</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
     </membership>
