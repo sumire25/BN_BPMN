@@ -547,6 +547,19 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
+    <user userName="tailong">
+      <firstName>Marko</firstName>
+      <lastName>Sumire</lastName>
+      <title>Mr,.</title>
+      <jobTitle>Guerrero Dragon</jobTitle>
+      <manager>zachary.williamson</manager>
+      <personalData/>
+      <professionalData>
+        <email>guerrero.dragon@acme.com</email>
+      </professionalData>
+      <password encrypted="false">dimelo</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -564,6 +577,9 @@
     </role>
     <role name="evaluadorInmobiliario">
       <displayName>Evaluador Inmobiliario</displayName>
+    </role>
+    <role name="AtencionAlCliente">
+      <displayName>validador</displayName>
     </role>
   </roles>
   <groups>
@@ -745,6 +761,12 @@
       <roleName>asesorComercial</roleName>
       <groupName>north_america</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>tailong</userName>
+      <roleName>AtencionAlCliente</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/acme</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
