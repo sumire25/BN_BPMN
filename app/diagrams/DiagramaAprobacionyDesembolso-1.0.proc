@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_cEVw8Ep6EfCfibnwC4hCdA" name="DiagramaAprobacionyDesembolso" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_cEVw8Up6EfCfibnwC4hCdA" name="AprobacionyDesembolso">
-      <elements xmi:type="process:Lane" xmi:id="_cEVw8kp6EfCfibnwC4hCdA" name="Gerente de Agencia" actor="_cEWYGEp6EfCfibnwC4hCdA">
+      <elements xmi:type="process:Lane" xmi:id="_cEVw8kp6EfCfibnwC4hCdA" name="Gerente de Agencia" actor="_FjQHYFTzEfCdNJMW4Bk01w">
         <elements xmi:type="process:StartMessageEvent" xmi:id="_HpgZkEp8EfCfibnwC4hCdA" name="Aprobacion Inmobiliaria" outgoing="_PP3G8Ep8EfCfibnwC4hCdA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_HphnsUp8EfCfibnwC4hCdA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_HphnsEp8EfCfibnwC4hCdA" name="" content="" returnTypeFixed="true"/>
@@ -24,7 +24,7 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_au0dk0p8EfCfibnwC4hCdA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_EDNWYEp-EfCfibnwC4hCdA" name="Asesor Comercial">
+      <elements xmi:type="process:Lane" xmi:id="_EDNWYEp-EfCfibnwC4hCdA" name="Asesor Comercial" actor="_GvwMMFTyEfCdNJMW4Bk01w">
         <elements xmi:type="process:Task" xmi:id="_iMEnYEp-EfCfibnwC4hCdA" name="Emite Hoja de Condiciones" outgoing="_mPyUcEp-EfCfibnwC4hCdA" incoming="_RVthEE_KEfC6ANhX_RwhKQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_fGevckp-EfCfibnwC4hCdA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_fGevcUp-EfCfibnwC4hCdA" name="" content="" returnTypeFixed="true"/>
@@ -209,7 +209,9 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_RVyZkE_KEfC6ANhX_RwhKQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_RVzAoE_KEfC6ANhX_RwhKQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_cEWYGEp6EfCfibnwC4hCdA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_cEWYGEp6EfCfibnwC4hCdA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor"/>
+      <actors xmi:type="process:Actor" xmi:id="_GvwMMFTyEfCdNJMW4Bk01w" name="asesorComercial"/>
+      <actors xmi:type="process:Actor" xmi:id="_FjQHYFTzEfCdNJMW4Bk01w" name="gerenteDeAgencia" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_cEWYGUp6EfCfibnwC4hCdA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_cEWYGkp6EfCfibnwC4hCdA">
         <name xmi:type="expression:Expression" xmi:id="_cEWYG0p6EfCfibnwC4hCdA" content="" returnTypeFixed="true"/>
