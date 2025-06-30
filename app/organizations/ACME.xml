@@ -565,6 +565,12 @@
     <role name="evaluadorInmobiliario">
       <displayName>Evaluador Inmobiliario</displayName>
     </role>
+    <role name="asesor">
+      <displayName>Asesor</displayName>
+    </role>
+    <role name="plataformaBanco">
+      <displayName>Plataforma Banco</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -670,13 +676,13 @@
     </membership>
     <membership>
       <userName>jan.fisher</userName>
-      <roleName>member</roleName>
+      <roleName>plataformaBanco</roleName>
       <groupName>it</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
     <membership>
       <userName>isabel.bleasdale</userName>
-      <roleName>member</roleName>
+      <roleName>asesor</roleName>
       <groupName>marketing</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
