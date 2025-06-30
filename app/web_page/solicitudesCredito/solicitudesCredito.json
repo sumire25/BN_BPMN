@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "61fdb64d-1da3-4cac-bae8-5276bc921fa9",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751255366549,
+  "lastUpdate" : 1751265112809,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -74,7 +74,7 @@
                       },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "SolicitudCredito"
+                        "value" : "Solicitudes de Credito"
                       },
                       "alignment" : {
                         "type" : "constant",
@@ -83,6 +83,10 @@
                       "dimension" : {
                         "type" : "constant",
                         "value" : 12
+                      },
+                      "allowHTML" : {
+                        "type" : "constant",
+                        "value" : false
                       }
                     },
                     "reference" : "0e9372dc-3968-42e0-8337-e43bf5365cc2",
@@ -115,7 +119,7 @@
                       },
                       "text" : {
                         "type" : "interpolation",
-                        "value" : "Link"
+                        "value" : "Nueva Solicitud de Credito"
                       },
                       "type" : {
                         "type" : "constant",
@@ -154,11 +158,11 @@
                       },
                       "alignment" : {
                         "type" : "constant",
-                        "value" : "left"
+                        "value" : "center"
                       },
                       "buttonStyle" : {
                         "type" : "constant",
-                        "value" : "link"
+                        "value" : "primary"
                       }
                     },
                     "reference" : "5a3eb3f5-4d60-47f5-95b6-c7a8242a08a4",
@@ -838,6 +842,14 @@
                             "value" : {
                               "type" : "variable",
                               "value" : "solicitudCredito_selected.aprobacionAdicional"
+                            },
+                            "required" : {
+                              "type" : "constant",
+                              "value" : false
+                            },
+                            "allowHTML" : {
+                              "type" : "constant",
+                              "value" : false
                             }
                           },
                           "reference" : "fe8703ed-1d44-42aa-a9bc-e8569d9de649",

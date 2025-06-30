@@ -8,10 +8,10 @@
         </applicationPages>
         <applicationMenus>
             <applicationMenu applicationPage="sol">
-                <displayName>Solicitudes</displayName>
+                <displayName>Solicitudes de Credito</displayName>
             </applicationMenu>
             <applicationMenu applicationPage="tasks">
-                <displayName>tareas</displayName>
+                <displayName>Tareas</displayName>
             </applicationMenu>
         </applicationMenus>
     </application>
