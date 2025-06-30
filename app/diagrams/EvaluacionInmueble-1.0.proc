@@ -112,12 +112,38 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_BF8TyE__EfCWZoltaJkuFg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_BF8Tx0__EfCWZoltaJkuFg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_MV7aSk__EfCWZoltaJkuFg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_H_a3kFAAEfCWZoltaJkuFg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_XsxFIFUtEfCHwIdQieLlQQ" name="evaluarAvalHipotecario" content="7b430696-f746-4c46-a3c9-c3f3d5edc478" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_MV7aSU__EfCWZoltaJkuFg">
             <inputs xmi:type="process:ContractInput" xmi:id="_ZE3VkFAAEfCWZoltaJkuFg" name="clientePresentaAvalInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_ZE3VkVAAEfCWZoltaJkuFg"/>
             </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_LbC00FUtEfCHwIdQieLlQQ" name="solicitudCreditoInput" type="COMPLEX" dataReference="solicitudCredito" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_LbC00VUtEfCHwIdQieLlQQ" name="nombre" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_LbC00lUtEfCHwIdQieLlQQ" name="dni" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_LbC001UtEfCHwIdQieLlQQ" name="montoCredito" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_LbC01FUtEfCHwIdQieLlQQ" name="documentoSolicitudCredito" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_LbC01VUtEfCHwIdQieLlQQ" name="tipoCredito" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_LbC01lUtEfCHwIdQieLlQQ" name="fechaSolicitud" type="LOCALDATE" createMode="false"/>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LbDb4FUtEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.nombre != null" errorMessage="nombre is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_nombre">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LbDb4VUtEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.dni != null" errorMessage="dni is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_dni">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LbDb4lUtEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.montoCredito != null" errorMessage="montoCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_montoCredito">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LbDb41UtEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.documentoSolicitudCredito != null" errorMessage="documentoSolicitudCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_documentoSolicitudCredito">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LbDb5FUtEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.tipoCredito != null" errorMessage="tipoCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_tipoCredito">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_LbDb5VUtEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.fechaSolicitud != null" errorMessage="fechaSolicitud is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_fechaSolicitud">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_MV7aTE__EfCWZoltaJkuFg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
@@ -150,12 +176,38 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_PhabqE_7EfCWZoltaJkuFg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_Phabp0_7EfCWZoltaJkuFg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_Q1HCuU_8EfCWZoltaJkuFg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_aL_moFAJEfCWZoltaJkuFg" name="validarInmuebleEnRango" content="f4b6b248-b311-4675-9e11-11427208c17c" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_v01GwFUsEfCHwIdQieLlQQ" name="validarInmuebleEnRango" content="48439a85-c82e-473f-8487-8796d507f5c0" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_Q1HCuE_8EfCWZoltaJkuFg">
             <inputs xmi:type="process:ContractInput" xmi:id="_Vaf8oFAAEfCWZoltaJkuFg" name="inmuebleEnRangoInput" type="BOOLEAN">
               <mapping xmi:type="process:ContractInputMapping" xmi:id="_Vaf8oVAAEfCWZoltaJkuFg"/>
             </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_j5lcwFUsEfCHwIdQieLlQQ" name="solicitudCreditoInput" type="COMPLEX" dataReference="solicitudCredito" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_j5lcwVUsEfCHwIdQieLlQQ" name="nombre" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_j5lcwlUsEfCHwIdQieLlQQ" name="dni" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_j5lcw1UsEfCHwIdQieLlQQ" name="montoCredito" type="INTEGER" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_j5lcxFUsEfCHwIdQieLlQQ" name="documentoSolicitudCredito" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_j5lcxVUsEfCHwIdQieLlQQ" name="tipoCredito" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_j5lcxlUsEfCHwIdQieLlQQ" name="fechaSolicitud" type="LOCALDATE" createMode="false"/>
+            </inputs>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_j5vNwFUsEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.nombre != null" errorMessage="nombre is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_nombre">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_j5vNwVUsEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.dni != null" errorMessage="dni is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_dni">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_j5vNwlUsEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.montoCredito != null" errorMessage="montoCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_montoCredito">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_j5vNw1UsEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.documentoSolicitudCredito != null" errorMessage="documentoSolicitudCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_documentoSolicitudCredito">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_j5vNxFUsEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.tipoCredito != null" errorMessage="tipoCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_tipoCredito">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
+            <constraints xmi:type="process:ContractConstraint" xmi:id="_j5vNxVUsEfCHwIdQieLlQQ" expression="solicitudCreditoInput?.fechaSolicitud != null" errorMessage="fechaSolicitud is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_fechaSolicitud">
+              <inputNames>solicitudCreditoInput</inputNames>
+            </constraints>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_Q1HCu0_8EfCWZoltaJkuFg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>

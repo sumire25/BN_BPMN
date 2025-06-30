@@ -1,10 +1,10 @@
 {
-  "id" : "validarInmuebleEnRango",
-  "name" : "validarInmuebleEnRango",
+  "id" : "evaluarAvalHipotecario",
+  "name" : "evaluarAvalHipotecario",
   "type" : "form",
-  "uuid" : "48439a85-c82e-473f-8487-8796d507f5c0",
+  "uuid" : "7b430696-f746-4c46-a3c9-c3f3d5edc478",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751231847678,
+  "lastUpdate" : 1751231813764,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "4999d787-de67-4d20-8d68-82d76aa87802",
+        "reference" : "a7684310-5644-4029-aa00-888123da9f7d",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -53,7 +53,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "54f7c589-1818-4b32-bb1b-ab3ee81c7222",
+              "reference" : "d00f20d4-f743-4fe4-8f9c-a27f52364b99",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -101,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "a5abb8a7-48dd-4218-b590-a238d19a1c2e",
+              "reference" : "9ea6fa16-dafb-44ce-8c57-e6d1c5e7ee32",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -117,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "89b13e10-0e1b-4438-8431-4319e5dfe0f1",
+        "reference" : "903c57d9-46ec-4696-97ce-c4eba32241a2",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "1dac93d7-8a79-4d44-a445-d98f949cf6ca",
+          "reference" : "fea69ec8-242c-4562-975b-94f431b74820",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -134,10 +134,10 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 6,
+                  "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
-                  "lg" : 6
+                  "lg" : 12
                 },
                 "propertyValues" : {
                   "hidden" : {
@@ -169,7 +169,7 @@
                     "value" : false
                   }
                 },
-                "reference" : "d2a6e352-b4a7-4b7a-9f68-16353b1d362b",
+                "reference" : "469fd7db-9db1-4faf-bb88-422dd4de0c8d",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -201,7 +201,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "ffa351b5-9b43-4b3c-8f62-da1d79499af9",
+                "reference" : "f0f1b0bb-8f5f-4fc1-a152-a0b19ba94fb1",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -289,7 +289,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "d9f6336c-3e80-4735-b24a-9180d8fd180e",
+                      "reference" : "eec82de3-d050-4212-84b6-7eb1676a7888",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -379,7 +379,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "6039d2a2-8d29-47c6-82ca-f60013db0c31",
+                      "reference" : "b3b930d5-ec28-43bb-abc4-3a95194a7b3c",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -469,7 +469,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "b4216d46-472c-49df-839e-e8862ecc73fb",
+                      "reference" : "384b39c3-cf5b-404e-b605-14772da33e29",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -559,7 +559,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "5f8b43c5-2d04-4540-ad8f-b55b148193f3",
+                      "reference" : "17943dba-b7f5-4819-be9f-1095141e7772",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -649,7 +649,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "9545a80b-f95b-4c7a-8c14-9c49d05c0e9b",
+                      "reference" : "7fb57c78-b828-4854-986a-cfcd2bbcffd1",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -729,7 +729,7 @@
                           "value" : false
                         }
                       },
-                      "reference" : "f154ce95-f6a7-4590-81c2-1898b639bd52",
+                      "reference" : "ad259d53-c25a-4d35-88d0-8ab104bd6b5a",
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
@@ -766,7 +766,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Inmueble En Rango Input"
+                    "value" : "Cliente Presenta Aval Input"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -774,18 +774,10 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.inmuebleEnRangoInput"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
+                    "value" : "formInput.clientePresentaAvalInput"
                   }
                 },
-                "reference" : "ff5fa6c6-189e-4ef4-888b-78c735cc511d",
+                "reference" : "59595c2c-0433-4938-8995-004862d8d2ab",
                 "hasValidationError" : false,
                 "id" : "pbCheckbox",
                 "description" : ""
@@ -866,7 +858,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "4a30f69f-820c-4366-af3b-a608d7e08531",
+                "reference" : "033e14d3-b54d-45f2-a881-0bc03e2ac39b",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -918,7 +910,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "63a6c926-5efd-487a-818f-4fbae6ed11f2",
+                "reference" : "f218cb8c-d88c-43ae-ac3e-c94a309713eb",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -941,7 +933,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"inmuebleEnRangoInput\" : false\r",
+        "  \"clientePresentaAvalInput\" : false\r",
         "}"
       ],
       "exposed" : false
@@ -973,7 +965,7 @@
       "value" : [
         "if( $data.solicitudCredito ){",
         "\treturn {",
-        "\t\tinmuebleEnRangoInput: $data.formInput.inmuebleEnRangoInput,",
+        "\t\tclientePresentaAvalInput: $data.formInput.clientePresentaAvalInput,",
         "\t\t//map solicitudCredito variable to expected task contract input",
         "\t\tsolicitudCreditoInput: {",
         "\t\t\tnombre: $data.solicitudCredito.nombre !== undefined ? $data.solicitudCredito.nombre : null,",
@@ -1005,14 +997,14 @@
   },
   "assets" : [
     {
-      "id" : "7817f632-d2a9-401f-8ec1-7aeaa1d039b5",
+      "id" : "dcb3a830-4894-4b45-a076-9e77a3649c37",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "aea3e380-4da7-4292-9edc-e5688b79620c",
+      "id" : "4d351a5e-84eb-44cf-ae2a-f8ba91894a92",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
