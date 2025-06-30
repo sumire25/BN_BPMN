@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_EijG4E_mEfCWZoltaJkuFg" name="OtorgamientoCreditoHipotecario" version="1.1" bonitaModelVersion="8">
-    <elements xmi:type="process:Pool" xmi:id="_EijG4U_mEfCWZoltaJkuFg" name="Otorgamiento de Credito Hipotecario" version="1.1">
+    <elements xmi:type="process:Pool" xmi:id="_EijG4U_mEfCWZoltaJkuFg" name="OtorgamientodeCreditoHipotecario" version="1.1">
       <elements xmi:type="process:Lane" xmi:id="_EijG4k_mEfCWZoltaJkuFg" name="Asesor Comercial" actor="_BX-SME_vEfCWZoltaJkuFg">
         <elements xmi:type="process:StartEvent" xmi:id="_EijG40_mEfCWZoltaJkuFg" name="Inicio1" outgoing="_4K0tgE_rEfCWZoltaJkuFg">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_EijG5E_mEfCWZoltaJkuFg" name="" content="" returnTypeFixed="true"/>
