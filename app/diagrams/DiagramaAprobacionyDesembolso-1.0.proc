@@ -205,8 +205,8 @@
       <formMapping xmi:type="process:FormMapping" xmi:id="_cEWYEUp6EfCfibnwC4hCdA">
         <targetForm xmi:type="expression:Expression" xmi:id="_Q2GrUFVZEfCkjJoaQkqkcw" name="newForm1" content="bfcf894a-bf8f-4725-9c82-2d291e4381f7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_cEWYE0p6EfCfibnwC4hCdA" type="NONE">
-        <targetForm xmi:type="expression:Expression" xmi:id="_cEWYFEp6EfCfibnwC4hCdA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_cEWYE0p6EfCfibnwC4hCdA">
+        <targetForm xmi:type="expression:Expression" xmi:id="_sIx64FVwEfCkjJoaQkqkcw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_PP3G8Ep8EfCfibnwC4hCdA" target="_nGuwkFVgEfCkjJoaQkqkcw" source="_PvzzoFVDEfCdNJMW4Bk01w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_PP3uAEp8EfCfibnwC4hCdA"/>
