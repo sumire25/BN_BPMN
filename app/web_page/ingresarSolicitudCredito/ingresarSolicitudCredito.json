@@ -2,9 +2,9 @@
   "id" : "ingresarSolicitudCredito",
   "name" : "ingresarSolicitudCredito",
   "type" : "form",
-  "uuid" : "42b45896-2dfe-4a93-878e-448eea5845a9",
+  "uuid" : "afd48d57-91d0-4758-bf7e-441d38585df4",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751291319382,
+  "lastUpdate" : 1751294185587,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "cd7caff8-a588-4b46-9041-6926dfbd5af5",
+        "reference" : "da89e130-a676-41ec-8f60-c4a8f2e02034",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -23,7 +23,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "844f46b3-2f17-4fd3-866f-ed932ae1d604",
+          "reference" : "ba0d9865-9aba-4ee5-a082-0fa4f486e16a",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -66,7 +66,7 @@
                     "value" : false
                   }
                 },
-                "reference" : "f74cbe46-3547-4167-a055-000429ec0922",
+                "reference" : "6c1b4842-b39d-4b24-868a-4fe7a71c2228",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -98,7 +98,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "bf4c998d-407d-4540-996b-7dfd4a1ac3c8",
+                "reference" : "3a488971-1edc-4d59-bd59-0e624d0a8778",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -187,7 +187,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "c3664efa-ee12-470f-a776-cdd910d3dfa3",
+                      "reference" : "b294d281-768e-4c98-870f-874ceead8451",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -249,35 +249,9 @@
                         "required" : {
                           "type" : "constant",
                           "value" : true
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "30aa6c7b-278b-42ef-954c-fcae21929bcc",
+                      "reference" : "fbf451ef-75f9-46e5-975e-db0e54718913",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -287,41 +261,33 @@
                     {
                       "type" : "component",
                       "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
                         "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
                         "lg" : 12
                       },
                       "propertyValues" : {
-                        "cssClasses" : {
+                        "labelHidden" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : false
                         },
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
                         },
-                        "required" : {
+                        "labelPosition" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : "top"
                         },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
+                        "cssClasses" : {
                           "type" : "constant",
                           "value" : ""
                         },
-                        "maxLength" : {
+                        "labelWidth" : {
                           "type" : "constant",
-                          "value" : ""
+                          "value" : 1
                         },
                         "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
                           "type" : "constant",
                           "value" : false
                         },
@@ -329,43 +295,30 @@
                           "type" : "interpolation",
                           "value" : "Correo"
                         },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
                         "placeholder" : {
-                          "type" : "interpolation"
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.solicitudCreditoInput.correo"
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
+                          "type" : "constant"
                         },
                         "type" : {
                           "type" : "constant",
                           "value" : "text"
                         },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
+                        "dimension" : {
                           "type" : "constant",
-                          "value" : 1
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.solicitudCreditoInput.correo"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
                         }
                       },
-                      "reference" : "21dd52d8-d6cd-4893-a5f1-ff7503df1cb1",
+                      "reference" : "5fa7e727-4602-44bf-a08a-caabfa27e22d",
                       "hasValidationError" : false,
-                      "id" : "pbInput"
+                      "id" : "pbInput",
+                      "description" : ""
                     }
                   ],
                   [
@@ -452,7 +405,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "c52f9fd8-7543-4198-9229-3fc9763b27c2",
+                      "reference" : "83a47be1-9d31-4461-b0f8-ea3356a5e7d1",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -542,7 +495,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "46714bad-915b-4c1e-9cf4-d6fa33619328",
+                      "reference" : "980150ab-8f18-43da-8636-fbe850dc29e8",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -633,7 +586,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "c3693a57-1d80-4554-877e-d02375aeb4c2",
+                      "reference" : "45d5dc82-008a-48ac-bc55-5e2f5a5d1b90",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -698,7 +651,7 @@
                         },
                         "placeholder" : {
                           "type" : "constant",
-                          "value" : "Ingrese una fecha (dd/mm/aaaa)"
+                          "value" : "Enter a date (mm/dd/yyyy)"
                         },
                         "dimension" : {
                           "type" : "constant",
@@ -707,13 +660,9 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "formInput.solicitudCreditoInput.fechaSolicitud"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
                         }
                       },
-                      "reference" : "b4e315ae-ce56-4d03-9063-6a35e20a4114",
+                      "reference" : "36cd77a7-4992-4120-8f05-69665341c452",
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
@@ -797,7 +746,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7d5b6a06-a61f-4557-a855-224df2924661",
+                "reference" : "f2f8b7a7-ef69-4e41-9da3-3d8dadb6da4b",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -849,7 +798,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "23e98e6b-d399-4bc3-8cb6-14fc2dc6a7d8",
+                "reference" : "f06b339e-c0dd-4197-adb7-afa2f53c87cc",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -868,6 +817,7 @@
         "  \"solicitudCreditoInput\" : {\r",
         "    \"nombre\" : \"\",\r",
         "    \"dni\" : \"\",\r",
+        "    \"correo\" : \"\",\r",
         "    \"montoCredito\" : 0,\r",
         "    \"documentoSolicitudCredito\" : \"\",\r",
         "    \"tipoCredito\" : \"\",\r",
@@ -904,16 +854,16 @@
   },
   "assets" : [
     {
-      "id" : "431552fb-d5f6-4292-bae2-6d355a8a9e30",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "099e4a90-18b0-4709-aeb4-0fef7172c48d",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "9f5342b6-a940-4775-8208-218105c6a4c2",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "87fb2b62-0d86-4a1a-a2d0-2312f59fabb5",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
