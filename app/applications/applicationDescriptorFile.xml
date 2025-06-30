@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
+    <application homePage="sol" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="solicitudesCredito" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>Solicitudes de Credito</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_solicitudesCredito" token="sol"/>
+            <applicationPage customPage="custompage_tasklist" token="tasks"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="sol">
+                <displayName>Solicitudes de Credito</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="tasks">
+                <displayName>Tareas</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
