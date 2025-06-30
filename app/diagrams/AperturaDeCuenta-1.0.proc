@@ -225,7 +225,7 @@
         </elements>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_rik1gFV7EfCBia1ypRNOlA" name="Operador" actor="_w4EF21V2EfCBia1ypRNOlA">
-        <elements xmi:type="process:Task" xmi:id="_zbZWcFV8EfCBia1ypRNOlA" name="Tipo de Cuenta" outgoing="_SKWzlFV8EfCBia1ypRNOlA" incoming="_9QzKwFV7EfCBia1ypRNOlA" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_zbZWcFV8EfCBia1ypRNOlA" name="Validar Tipo de Cuenta" outgoing="_SKWzlFV8EfCBia1ypRNOlA" incoming="_9QzKwFV7EfCBia1ypRNOlA" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_zG0DAVV7EfCBia1ypRNOlA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_zG0DAFV7EfCBia1ypRNOlA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_zG0DAlV7EfCBia1ypRNOlA" name="" content="" returnTypeFixed="true"/>
@@ -444,7 +444,7 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_rilcllV7EfCBia1ypRNOlA" type="7002">
             <children xmi:type="notation:Shape" xmi:id="_zbakkFV8EfCBia1ypRNOlA" type="3005" element="_zbZWcFV8EfCBia1ypRNOlA" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_zbakklV8EfCBia1ypRNOlA" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zbakkVV8EfCBia1ypRNOlA" x="422" y="120" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zbakkVV8EfCBia1ypRNOlA" x="422" y="120" width="120" height="60"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_rilckVV7EfCBia1ypRNOlA"/>
