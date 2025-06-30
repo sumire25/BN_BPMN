@@ -324,9 +324,7 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_jNq-gFA1EfCn7JLeQfk4oA" name="solicitudCredito" dataType="_vs4qs1AwEfCn7JLeQfk4oA" className="com.company.model.SolicitudCredito">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_zDwGYFA1EfCn7JLeQfk4oA" name="initSolicitudCredito()" content="def solicitudCreditoVar = new com.company.model.SolicitudCredito()&#xD;&#xA;solicitudCreditoVar.nombre = solicitudCreditoInput?.nombre&#xD;&#xA;solicitudCreditoVar.dni = solicitudCreditoInput?.dni&#xD;&#xA;solicitudCreditoVar.montoCredito = solicitudCreditoInput?.montoCredito&#xD;&#xA;solicitudCreditoVar.documentoSolicitudCredito = solicitudCreditoInput?.documentoSolicitudCredito&#xD;&#xA;solicitudCreditoVar.tipoCredito = solicitudCreditoInput?.tipoCredito&#xD;&#xA;solicitudCreditoVar.fechaSolicitud = solicitudCreditoInput?.fechaSolicitud&#xD;&#xA;solicitudCreditoVar.enProceso = true&#xD;&#xA;return solicitudCreditoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.SolicitudCredito">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_5uS2UFA2EfCn7JLeQfk4oA" name="solicitudCreditoInput" type="COMPLEX"/>
-        </defaultValue>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_zDwGYFA1EfCn7JLeQfk4oA" name="" content=""/>
       </data>
       <data xmi:type="process:Data" xmi:id="_UjGKcFSpEfCc6Zez0-CEVQ" name="garantia" dataType="_vs4qsFAwEfCn7JLeQfk4oA">
         <defaultValue xmi:type="expression:Expression" xmi:id="_UjGKcVSpEfCc6Zez0-CEVQ" content=""/>
@@ -343,7 +341,7 @@
       <data xmi:type="process:Data" xmi:id="_Mplo0FSvEfC_wvEaZLfNVw" name="comentariosAsesor" dataType="_vs4qsFAwEfCn7JLeQfk4oA">
         <defaultValue xmi:type="expression:Expression" xmi:id="_Mplo0VSvEfC_wvEaZLfNVw" content=""/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_vs4qk1AwEfCn7JLeQfk4oA">
+      <formMapping xmi:type="process:FormMapping" xmi:id="_vs4qk1AwEfCn7JLeQfk4oA" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_ANG40FSVEfCjN_ympKhH7Q" name="solicitudEvaluacionCliente" content="18c0c114-10c1-4825-9775-0799cdf16898" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_vs4qlVAwEfCn7JLeQfk4oA">
@@ -419,34 +417,7 @@
       <actors xmi:type="process:Actor" xmi:id="_ZUlE0FSbEfCjN_ympKhH7Q" name="asesorComercial"/>
       <actors xmi:type="process:Actor" xmi:id="_XvSSQFSsEfC_wvEaZLfNVw" name="ejecutivoRiesgos"/>
       <actors xmi:type="process:Actor" xmi:id="_vcC-UFSzEfC_wvEaZLfNVw" name="gerenteAgencia"/>
-      <contract xmi:type="process:Contract" xmi:id="_vs4qm1AwEfCn7JLeQfk4oA">
-        <inputs xmi:type="process:ContractInput" xmi:id="_zDvfUFA1EfCn7JLeQfk4oA" name="solicitudCreditoInput" type="COMPLEX" dataReference="solicitudCredito">
-          <inputs xmi:type="process:ContractInput" xmi:id="_zDvfUVA1EfCn7JLeQfk4oA" name="nombre"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_zDvfUlA1EfCn7JLeQfk4oA" name="dni"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_zDvfU1A1EfCn7JLeQfk4oA" name="montoCredito" type="INTEGER"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_zDvfVFA1EfCn7JLeQfk4oA" name="documentoSolicitudCredito"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_zDvfVVA1EfCn7JLeQfk4oA" name="tipoCredito"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_zDvfVlA1EfCn7JLeQfk4oA" name="fechaSolicitud" type="LOCALDATE"/>
-        </inputs>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_zDvfV1A1EfCn7JLeQfk4oA" expression="solicitudCreditoInput?.nombre != null" errorMessage="nombre is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_nombre">
-          <inputNames>solicitudCreditoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_zDvfWFA1EfCn7JLeQfk4oA" expression="solicitudCreditoInput?.dni != null" errorMessage="dni is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_dni">
-          <inputNames>solicitudCreditoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_zDvfWVA1EfCn7JLeQfk4oA" expression="solicitudCreditoInput?.montoCredito != null" errorMessage="montoCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_montoCredito">
-          <inputNames>solicitudCreditoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_zDvfWlA1EfCn7JLeQfk4oA" expression="solicitudCreditoInput?.documentoSolicitudCredito != null" errorMessage="documentoSolicitudCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_documentoSolicitudCredito">
-          <inputNames>solicitudCreditoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_zDvfW1A1EfCn7JLeQfk4oA" expression="solicitudCreditoInput?.tipoCredito != null" errorMessage="tipoCredito is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_tipoCredito">
-          <inputNames>solicitudCreditoInput</inputNames>
-        </constraints>
-        <constraints xmi:type="process:ContractConstraint" xmi:id="_zDvfXFA1EfCn7JLeQfk4oA" expression="solicitudCreditoInput?.fechaSolicitud != null" errorMessage="fechaSolicitud is mandatory for SolicitudCredito" name="mandatory_solicitudCreditoInput_fechaSolicitud">
-          <inputNames>solicitudCreditoInput</inputNames>
-        </constraints>
-      </contract>
+      <contract xmi:type="process:Contract" xmi:id="_vs4qm1AwEfCn7JLeQfk4oA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_vs4qnFAwEfCn7JLeQfk4oA">
         <name xmi:type="expression:Expression" xmi:id="_vs4qnVAwEfCn7JLeQfk4oA" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_vs4qnlAwEfCn7JLeQfk4oA" content="" returnTypeFixed="true"/>
