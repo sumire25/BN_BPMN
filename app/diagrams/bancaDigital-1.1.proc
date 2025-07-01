@@ -499,8 +499,8 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_ZelUoFZ4EfCq6o_fB8tQpg" name="nombreServicio" dataType="_nMvOO1RkEfCq6o_fB8tQpg" className="com.company.digital.Servicio">
         <defaultValue xmi:type="expression:Expression" xmi:id="_ZelUoVZ4EfCq6o_fB8tQpg" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_nMvNuVRkEfCq6o_fB8tQpg">
-        <targetForm xmi:type="expression:Expression" xmi:id="_qjeJYFUBEfCq6o_fB8tQpg" name="newForm" content="55186f27-7937-4642-92d8-220b449d8f05" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_nMvNuVRkEfCq6o_fB8tQpg" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_qjeJYFUBEfCq6o_fB8tQpg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_nMvNu1RkEfCq6o_fB8tQpg">
         <targetForm xmi:type="expression:Expression" xmi:id="_nMvNvFRkEfCq6o_fB8tQpg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
