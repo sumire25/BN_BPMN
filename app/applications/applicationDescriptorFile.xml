@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.1">
-    <application homePage="menu" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="myAperturaCuenta" version="1.0" profile="User" state="ACTIVATED">
-        <displayName>Solicitud de Apertura de Cuenta</displayName>
+    <application homePage="sol" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="solicitudesCredito" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>Solicitudes de Credito</displayName>
         <applicationPages>
-            <applicationPage customPage="custompage_menu" token="menu"/>
+            <applicationPage customPage="custompage_solicitudesCredito" token="sol"/>
             <applicationPage customPage="custompage_tasklist" token="tasks"/>
         </applicationPages>
         <applicationMenus>
-            <applicationMenu applicationPage="menu">
-                <displayName>menu</displayName>
+            <applicationMenu applicationPage="sol">
+                <displayName>Solicitudes de Credito</displayName>
             </applicationMenu>
             <applicationMenu applicationPage="tasks">
-                <displayName>Mis Tareas</displayName>
+                <displayName>Tareas</displayName>
             </applicationMenu>
         </applicationMenus>
     </application>

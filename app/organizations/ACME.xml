@@ -547,6 +547,19 @@
       <enabled>true</enabled>
       <password encrypted="false">bpm</password>
     </user>
+    <user userName="tailong">
+      <firstName>Marko</firstName>
+      <lastName>Sumire</lastName>
+      <title>Mr,.</title>
+      <jobTitle>Guerrero Dragon</jobTitle>
+      <manager>zachary.williamson</manager>
+      <personalData/>
+      <professionalData>
+        <email>guerrero.dragon@acme.com</email>
+      </professionalData>
+      <password encrypted="false">dimelo</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="member">
@@ -565,8 +578,8 @@
     <role name="evaluadorInmobiliario">
       <displayName>Evaluador Inmobiliario</displayName>
     </role>
-    <role name="atencionAlCliente">
-      <displayName>Atencion al Cliente</displayName>
+    <role name="AtencionAlCliente">
+      <displayName>validador</displayName>
     </role>
   </roles>
   <groups>
@@ -621,12 +634,6 @@
     <group name="services" parentPath="/acme/production">
       <displayName>Services</displayName>
       <description>This group represents the services department of the ACME organization</description>
-    </group>
-    <group name="Division De Depositos" parentPath="/acme">
-      <displayName>Depositos</displayName>
-    </group>
-    <group name="Red de Agencias del Banco de la Naci&#xf3;n" parentPath="/acme">
-      <displayName>Agencia</displayName>
     </group>
   </groups>
   <memberships>
@@ -691,7 +698,7 @@
     </membership>
     <membership>
       <userName>favio.riviera</userName>
-      <roleName>member</roleName>
+      <roleName>ejecutivoDeRiesgos</roleName>
       <groupName>marketing</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
@@ -727,7 +734,7 @@
     </membership>
     <membership>
       <userName>daniela.angelo</userName>
-      <roleName>atencionAlCliente</roleName>
+      <roleName>asesorComercial</roleName>
       <groupName>europe</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
     </membership>
@@ -745,7 +752,7 @@
     </membership>
     <membership>
       <userName>giovanna.almeida</userName>
-      <roleName>member</roleName>
+      <roleName>gerenteDeAgencia</roleName>
       <groupName>latin_america</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
     </membership>
@@ -754,6 +761,12 @@
       <roleName>asesorComercial</roleName>
       <groupName>north_america</groupName>
       <groupParentPath>/acme/sales</groupParentPath>
+    </membership>
+    <membership>
+      <userName>tailong</userName>
+      <roleName>AtencionAlCliente</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/acme</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

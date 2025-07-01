@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connectorconfiguration:ConnectorConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://www.bonitasoft.org/model/connector/configuration" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:process="http://www.bonitasoft.org/ns/bpm/process" definitionId="email" version="1.2.0" name="AceptacionEmail" modelVersion="8">
+  <parameters key="smtpHost">
+    <expression xsi:type="expression:Expression" name="smtp.gmail.com" content="smtp.gmail.com" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="smtpPort">
+    <expression xsi:type="expression:Expression" name="465" content="465" returnType="java.lang.Integer" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="sslSupport">
+    <expression xsi:type="expression:Expression" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="starttlsSupport">
+    <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="trustCertificate">
+    <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="userName">
+    <expression xsi:type="expression:Expression" name="emalcoaccha@unsa.edu.pe" content="emalcoaccha@unsa.edu.pe" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="password">
+    <expression xsi:type="expression:Expression" name="wipi kpfu fbqy ifis" content="wipi kpfu fbqy ifis" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="from">
+    <expression xsi:type="expression:Expression" name="emalcoaccha@unsa.edu.pe" content="emalcoaccha@unsa.edu.pe" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="returnPath">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="to">
+    <expression xsi:type="expression:Expression" name="to()" content="${reclamo.correoCliente}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+      <referencedElements xsi:type="process:BusinessObjectData" name="reclamo" className="com.company.model.Reclamo">
+        <dataType xsi:type="process:BusinessObjectType" href="platform:/resource/banconacion-app/diagrams/DiagramaReclamo-1.0.proc#_P_RwhEo9EfCkDNqZRFR0Ow"/>
+      </referencedElements>
+    </expression>
+  </parameters>
+  <parameters key="bcc">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="cc">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="subject">
+    <expression xsi:type="expression:Expression" name="Estado Solicitud de Reclamo Banco de la Nación" content="Estado Solicitud de Reclamo Banco de la Nación" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="html">
+    <expression xsi:type="expression:Expression" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="message">
+    <expression xsi:type="expression:Expression" name="&lt;pattern-expression>" content="&lt;p>Estimado(a) ${nombreCliente},&lt;/p>&#xA;&#xA;&lt;p>Le informamos que su solicitud ha sido&amp;nbsp;&lt;strong>aprobada&lt;/strong>&amp;nbsp;exitosamente tras la evaluaci&amp;oacute;n correspondiente.&lt;/p>&#xA;&#xA;&lt;p>Agradecemos la confianza depositada en nosotros. En breve, uno de nuestros asesores se pondr&amp;aacute; en contacto con usted para indicarle los pr&amp;oacute;ximos pasos a seguir.&lt;/p>&#xA;&#xA;&lt;p>Si tiene alguna consulta adicional, no dude en comunicarse con nosotros a trav&amp;eacute;s de nuestros canales oficiales.&lt;/p>&#xA;&#xA;&lt;p>Chavo,&lt;br />&#xA;Moka-chan ga oshiete kureta ironna mita me ni nareru apurina ndatte dore dore... kawaii. ushoo neko-chan! Nya nya!&lt;br />&#xA;&lt;a href=&quot;https://www.youtube.com/shorts/T-s3D6ljEeI&quot; target=&quot;_blank&quot;>https://www.youtube.com/shorts/T-s3D6ljEeI&lt;/a>&lt;/p>&#xA;&#xA;&lt;p>Te quiere Ron Damon&lt;/p>&#xA;&#xA;&lt;p>&amp;Aacute;rea de Atenci&amp;oacute;n al Cliente&lt;/p>&#xA;" type="TYPE_PATTERN" returnTypeFixed="true">
+      <referencedElements xsi:type="expression:Expression" name="nombreCliente" content="nombreCliente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+    </expression>
+  </parameters>
+  <parameters key="headers">
+    <expression xsi:type="expression:TableExpression"/>
+  </parameters>
+  <parameters key="charset">
+    <expression xsi:type="expression:Expression" name="UTF-8" content="UTF-8" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="replyTo">
+    <expression xsi:type="expression:Expression" content="" returnTypeFixed="true"/>
+  </parameters>
+  <parameters key="attachments">
+    <expression xsi:type="expression:ListExpression"/>
+  </parameters>
+</connectorconfiguration:ConnectorConfiguration>
