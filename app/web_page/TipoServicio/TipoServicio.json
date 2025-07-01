@@ -1,10 +1,10 @@
 {
-  "id" : "MenuPrincipal",
-  "name" : "MenuPrincipal",
+  "id" : "TipoServicio",
+  "name" : "TipoServicio",
   "type" : "form",
-  "uuid" : "c15308a3-7c08-478c-9054-ddea29844340",
+  "uuid" : "4ca727f8-47c0-4b2d-a3bd-46bfef9442c0",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1751332816694,
+  "lastUpdate" : 1751332955855,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "6395edbb-dd82-493b-8904-1527c396ac29",
+        "reference" : "cb2de506-ebe3-45a2-a8c3-cfc866a1a59f",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -42,7 +42,7 @@
                 },
                 "text" : {
                   "type" : "interpolation",
-                  "value" : "Menu Principal"
+                  "value" : "Tipo de Servicio"
                 },
                 "alignment" : {
                   "type" : "constant",
@@ -57,7 +57,7 @@
                   "value" : false
                 }
               },
-              "reference" : "cc0517d9-e6c7-4477-b2de-50021ce7f964",
+              "reference" : "6c19ebf2-0eba-46ce-8667-a2677a57fe09",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -105,7 +105,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "b7d2c222-9e7e-40a7-9cf6-8458e0b5d9f6",
+              "reference" : "52f3bdb9-e1d5-497d-a57d-5274ede81a1d",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -130,7 +130,7 @@
             "value" : false
           }
         },
-        "reference" : "b1e93837-618c-4123-82ab-72779c103974",
+        "reference" : "fcd7d95c-4414-4223-a13a-9fa496067815",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -139,7 +139,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "97bcad70-12a7-4d73-adb6-8a72aa25e8a3",
+          "reference" : "26b665c5-92ce-4fbd-bdd8-27501b9b9738",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -150,7 +150,7 @@
                   "xs" : 12,
                   "sm" : 12,
                   "md" : 6,
-                  "lg" : 4
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -171,7 +171,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "HiSTORIAL MOVIMIENTOS"
+                    "value" : "luz"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -229,7 +229,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "658a0720-cc81-4f6c-a652-6b53f281c34b",
+                "reference" : "0a14462e-252f-4136-b389-592bda7de2aa",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               },
@@ -238,8 +238,8 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 5,
-                  "lg" : 8
+                  "md" : 6,
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -260,7 +260,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "TRANSFERENCIA"
+                    "value" : "agua"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -318,7 +318,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "6a77be41-86bb-40d0-970b-acf2084a168e",
+                "reference" : "f973b725-60a2-4009-8745-b835dacbebd4",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -351,7 +351,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "CONSULTAR SALDO"
+                    "value" : "gas"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -409,7 +409,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "5d9d3250-7cec-472d-9e01-ee9d55992ae1",
+                "reference" : "62d134fc-b8f3-4688-9ab2-8bebc508cff3",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               },
@@ -440,7 +440,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "PAGAR SERVICIOS"
+                    "value" : "internet"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -498,7 +498,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "f6ac1ec1-0378-4857-aa63-a8aff48d5bac",
+                "reference" : "a75de8d6-b7ab-4274-8bdc-cb201be8f5ed",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -547,17 +547,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
                   }
                 },
-                "reference" : "d2b85f5e-8c4f-454c-a201-f7b905e04b48",
+                "reference" : "43a06df8-d073-47fe-8872-bbbcfdb1601c",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -617,16 +609,16 @@
   },
   "assets" : [
     {
-      "id" : "cce6ef1e-8fbc-40e1-897d-e369f4e65880",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "6a7e8354-62d2-47b7-b8df-17d52b328f46",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "0735ad2c-7d45-465e-8d93-74f508c09e39",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "7076b60f-978c-4e52-8ff2-3b2cff8ffbc1",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     }
