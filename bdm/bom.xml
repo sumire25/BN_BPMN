@@ -103,13 +103,28 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.Reclamo">
             <fields>
-                <field type="LONG" length="255" name="reclamoId" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="clienteId" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="reclamoId" nullable="false" collection="false"/>
                 <field type="TEXT" length="255" name="descripcion" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="canalIncidencia" nullable="false" collection="false"/>
-                <field type="LOCALDATETIME" length="255" name="fechaReclamo" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaReclamo" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="enProceso" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="aceptado" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="nombreCliente" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="dniCliente" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="correoCliente" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="telefonoCliente" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.SolicitudAperturaCuenta">
+            <fields>
+                <field type="STRING" length="255" name="nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="dni" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="correo" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="validarDatos" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="personaJuridica" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -117,13 +132,16 @@
         </businessObject>
         <businessObject qualifiedName="com.company.model.SolicitudCredito">
             <fields>
-                <field type="LONG" length="255" name="solicitudCreditoId" nullable="false" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.Cliente" fetchType="LAZY" name="clienteId" nullable="false" collection="false"/>
-                <field type="LONG" length="255" name="montoCredito" nullable="false" collection="false"/>
-                <field type="TEXT" length="255" name="documentoSolicitudCredito" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="nombre" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="dni" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="correo" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="montoCredito" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="documentoSolicitudCredito" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="tipoCredito" nullable="false" collection="false"/>
-                <field type="LOCALDATE" length="255" name="fechaCredito" nullable="false" collection="false"/>
-                <field type="BOOLEAN" length="255" name="enProceso" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fechaSolicitud" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="enProceso" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="clienteAprobado" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="aprobacionAdicional" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="aceptado" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>

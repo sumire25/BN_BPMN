@@ -89,8 +89,8 @@
     </dependency>
     <dependency>
       <groupId>org.bonitasoft.connectors</groupId>
-      <artifactId>bonita-connector-groovy</artifactId>
-      <version>1.1.4</version>
+      <artifactId>bonita-connector-email</artifactId>
+      <version>1.4.2</version>
     </dependency>
   </dependencies>
   <build>
