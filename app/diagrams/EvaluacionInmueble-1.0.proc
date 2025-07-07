@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/bpm/configuration" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_1LtEgEpaEfC3-YWwH5BsRA" name="EvaluacionInmueble" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_1LtEgUpaEfC3-YWwH5BsRA" name="Evaluacion de Inmueble">
       <elements xmi:type="process:Lane" xmi:id="_1LtEgkpaEfC3-YWwH5BsRA" name="Asesor Comercial" actor="_ef-U4ExGEfC3h6r4xyR5dQ">
@@ -340,6 +340,39 @@
       <actors xmi:type="process:Actor" xmi:id="_3Rlp0ExFEfC3h6r4xyR5dQ" name="validator"/>
       <actors xmi:type="process:Actor" xmi:id="_aCHCcExGEfC3h6r4xyR5dQ" name="evaluadorInmobiliario"/>
       <actors xmi:type="process:Actor" xmi:id="_ef-U4ExGEfC3h6r4xyR5dQ" name="asesorComercial"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_azh9QFaXEfCq6o_fB8tQpg" name="Production" version="8" username="walter.bates">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_azh9RlaXEfCq6o_fB8tQpg">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_azh9R1aXEfCq6o_fB8tQpg" name="Employee actor">
+            <groups xmi:type="actormapping:Groups" xmi:id="_azh9SFaXEfCq6o_fB8tQpg"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_azh9SVaXEfCq6o_fB8tQpg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_azh9SlaXEfCq6o_fB8tQpg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_azh9S1aXEfCq6o_fB8tQpg"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_azh9TFaXEfCq6o_fB8tQpg" name="validator">
+            <groups xmi:type="actormapping:Groups" xmi:id="_azh9TVaXEfCq6o_fB8tQpg"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_azh9TlaXEfCq6o_fB8tQpg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_azh9T1aXEfCq6o_fB8tQpg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_azh9UFaXEfCq6o_fB8tQpg"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_azh9UVaXEfCq6o_fB8tQpg" name="evaluadorInmobiliario">
+            <groups xmi:type="actormapping:Groups" xmi:id="_azh9UlaXEfCq6o_fB8tQpg"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_azh9U1aXEfCq6o_fB8tQpg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_azh9VFaXEfCq6o_fB8tQpg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_azh9VVaXEfCq6o_fB8tQpg"/>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_azh9VlaXEfCq6o_fB8tQpg" name="asesorComercial">
+            <groups xmi:type="actormapping:Groups" xmi:id="_azh9V1aXEfCq6o_fB8tQpg"/>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_azh9WFaXEfCq6o_fB8tQpg"/>
+            <roles xmi:type="actormapping:Roles" xmi:id="_azh9WVaXEfCq6o_fB8tQpg"/>
+            <users xmi:type="actormapping:Users" xmi:id="_azh9WlaXEfCq6o_fB8tQpg"/>
+          </actorMapping>
+        </actorMappings>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_azh9QVaXEfCq6o_fB8tQpg" id="CONNECTOR"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_azh9QlaXEfCq6o_fB8tQpg" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_azh9Q1aXEfCq6o_fB8tQpg" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_azh9RFaXEfCq6o_fB8tQpg" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_azh9RVaXEfCq6o_fB8tQpg" id="GROOVY_SCRIPT"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_1LtEnEpaEfC3-YWwH5BsRA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_1LtEnUpaEfC3-YWwH5BsRA">
         <name xmi:type="expression:Expression" xmi:id="_1LtEnkpaEfC3-YWwH5BsRA" content="" returnTypeFixed="true"/>
