@@ -15,4 +15,19 @@
             </applicationMenu>
         </applicationMenus>
     </application>
+    <application homePage="menu" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="AperturaCuenta" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>AperturaCuenta</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_menu" token="menu"/>
+            <applicationPage customPage="custompage_tasklist" token="tacklist"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="menu">
+                <displayName>menu</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="tacklist">
+                <displayName>tacklist</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
 </applications>

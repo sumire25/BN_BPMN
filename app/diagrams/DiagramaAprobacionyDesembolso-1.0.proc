@@ -170,8 +170,10 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_v3BMYVVeEfCkjJoaQkqkcw" name="solicitudCredito" content="solicitudCredito" type="TYPE_VARIABLE" returnType="com.company.model.SolicitudCredito">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_xBgpkFVeEfCkjJoaQkqkcw" name="solicitudCredito" dataType="_cEWYMUp6EfCfibnwC4hCdA" className="com.company.model.SolicitudCredito"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_v3BMYlVeEfCkjJoaQkqkcw" name="newScript()" content="true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.SolicitudCredito"/>
-            <operator xmi:type="expression:Operator" xmi:id="_v3BMY1VeEfCkjJoaQkqkcw" type="ASSIGNMENT"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_v3BMYlVeEfCkjJoaQkqkcw" name="newScript()" content="false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean"/>
+            <operator xmi:type="expression:Operator" xmi:id="_v3BMY1VeEfCkjJoaQkqkcw" type="JAVA_METHOD" expression="setEnProceso">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_k3QPsEqIEfCfibnwC4hCdA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_k3QPsUqIEfCfibnwC4hCdA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -186,7 +188,7 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_E1_U8FVEEfCdNJMW4Bk01w" name="solicitudCredito" dataType="_cEWYMUp6EfCfibnwC4hCdA" className="com.company.model.SolicitudCredito">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_SWByj1VEEfCdNJMW4Bk01w" name="initSolicitudDeCredito()" content="def solicitudCreditoVar = new com.company.model.SolicitudCredito()&#xD;&#xA;solicitudCreditoVar.nombre =      ?.nombre&#xD;&#xA;solicitudCreditoVar.dni =      ?.dni&#xD;&#xA;solicitudCreditoVar.montoCredito =      ?.montoCredito&#xD;&#xA;solicitudCreditoVar.documentoSolicitudCredito =      ?.documentoSolicitudCredito&#xD;&#xA;solicitudCreditoVar.tipoCredito =      ?.tipoCredito&#xD;&#xA;solicitudCreditoVar.fechaSolicitud =      ?.fechaSolicitud&#xD;&#xA;solicitudCreditoVar.enProceso =      ?.enProceso&#xD;&#xA;return solicitudCreditoVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.SolicitudCredito"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_SWByj1VEEfCdNJMW4Bk01w" name="" content=""/>
       </data>
       <data xmi:type="process:Data" xmi:id="_8r8xEFVWEfCkjJoaQkqkcw" name="clienteAcudeFirma" dataType="_cEWYKUp6EfCfibnwC4hCdA">
         <defaultValue xmi:type="expression:Expression" xmi:id="_8r8xEVVWEfCkjJoaQkqkcw" name="" content="" returnType="java.lang.Boolean"/>
@@ -200,7 +202,7 @@
       <data xmi:type="process:Data" xmi:id="_EF6AMFViEfCkjJoaQkqkcw" name="aprobacionSistema" dataType="_cEWYKUp6EfCfibnwC4hCdA">
         <defaultValue xmi:type="expression:Expression" xmi:id="_EF6AMVViEfCkjJoaQkqkcw" content="" returnType="java.lang.Boolean"/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_cEWYEUp6EfCfibnwC4hCdA">
+      <formMapping xmi:type="process:FormMapping" xmi:id="_cEWYEUp6EfCfibnwC4hCdA" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_Q2GrUFVZEfCkjJoaQkqkcw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_cEWYE0p6EfCfibnwC4hCdA">
