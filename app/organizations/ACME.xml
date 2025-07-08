@@ -548,15 +548,37 @@
       <password encrypted="false">bpm</password>
     </user>
     <user userName="tailong">
-      <firstName>Marko</firstName>
-      <lastName>Sumire</lastName>
+      <firstName>Tai</firstName>
+      <lastName>Long</lastName>
       <title>Mr,.</title>
       <jobTitle>Guerrero Dragon</jobTitle>
-      <manager>zachary.williamson</manager>
+      <manager></manager>
       <personalData/>
       <professionalData>
         <email>guerrero.dragon@acme.com</email>
       </professionalData>
+      <password encrypted="false">dimelo</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="Usuario1">
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="chifu">
+      <firstName>Chi</firstName>
+      <lastName>Fu</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">asi</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="tigresa">
+      <firstName>Tigresa</firstName>
+      <lastName>del oriente</lastName>
+      <personalData/>
+      <professionalData/>
       <password encrypted="false">dimelo</password>
       <customUserInfoValues/>
     </user>
@@ -580,6 +602,15 @@
     </role>
     <role name="AtencionAlCliente">
       <displayName>validador</displayName>
+    </role>
+    <role name="GestionCliente">
+      <displayName>GestionCliente</displayName>
+    </role>
+    <role name="Rol1">
+      <displayName>Rol1</displayName>
+    </role>
+    <role name="Operador">
+      <displayName>Operador</displayName>
     </role>
   </roles>
   <groups>
@@ -765,6 +796,23 @@
     <membership>
       <userName>tailong</userName>
       <roleName>AtencionAlCliente</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Usuario1</userName>
+      <roleName>member</roleName>
+      <groupName>acme</groupName>
+    </membership>
+    <membership>
+      <userName>chifu</userName>
+      <roleName>Operador</roleName>
+      <groupName>hr</groupName>
+      <groupParentPath>/acme</groupParentPath>
+    </membership>
+    <membership>
+      <userName>tigresa</userName>
+      <roleName>GestionCliente</roleName>
       <groupName>hr</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>

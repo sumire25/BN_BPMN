@@ -30,4 +30,15 @@
             </applicationMenu>
         </applicationMenus>
     </application>
+    <application homePage="realizarReclamos" layout="custompage_layoutBonita" theme="custompage_themeBonita" token="realizarReclamo" version="1.0" profile="User" state="ACTIVATED">
+        <displayName>Reclamos</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_dashboardReclamos" token="realizarReclamos"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="realizarReclamos">
+                <displayName>Dashboard Reclamos</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
 </applications>
