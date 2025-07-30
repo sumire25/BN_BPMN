@@ -1,10 +1,19 @@
-# Proyecto de Modelado BPM - Banco de la Nación
+# Trabajo Final - Desarrollo de Software Empresarial
 
-## Equipo de Trabajo
+## **Índice**
+
+1. [Equipo](#equipo)
+2. [Organización](#organización)
+3. [Propósito del Proyecto](#propósito-del-proyecto)
+4. [Visión general](#visión-general)
+5. [Procesos de negocio](#procesos-de-negocio)
+6. [Principales servicios REST](#principales-servicios-rest)
+7. [Herramienta Swagger](#herramienta-swagger)
+
+## **Equipo**
 
 **Nombre del Equipo:** Equipo de Desarrollo BPM
 
-**Integrantes:**
 - Sumire Ramos Marko Julio
 - Malcoaccha Díaz Erick Rubén
 - Lizarve Mamani Johan Fabricio
@@ -12,9 +21,7 @@
 - Philco Puma Josue Samuel
 - Deza Sotomayor Fernando David
 
----
-
-## Cliente: Organización
+## **Organización**
 
 **Nombre:** Banco de la Nación  
 **Sitio Web:** https://www.bn.com.pe/
@@ -28,34 +35,115 @@ El Banco de la Nación es una empresa de derecho público del Sector Economía y
 **Visión:**
 "Ser un banco moderno, sostenible y accesible a todos los peruanos, que ofrece una experiencia de servicio cercana y de calidad a sus clientes y usuarios."
 
+## **Propósito del Proyecto**
+
+Documentar, modelar y automatizar los procesos clave del Banco de la Nación mediante la notación **BPMN**, e implementar servicios REST que permitan una integración estructurada y estandarizada bajo el enfoque de **arquitectura orientada a servicios (SOA)** y principios de **DDD**.
+
+## Visión general
+
+La aplicación BPM implementada en **Bonitasoft** cuenta con:
+
+- **Application Page personalizada** para visualizar los procesos de la organización.
+- **Menú dinámico** que permite a los usuarios acceder a diferentes procesos que ofrece la organización como:
+    - Solicitud de crédito
+    - Evaluación de inmuebles
+    - Desembolso
+    - Atención de reclamos
+    - Apertura de cuentas
+
+## **Procesos de negocio**
+
+1. **Otorgamiento de Crédito Hipotecario:** Este proceso se subdivide en los siguientes subprocesos:
+
+    - **Evaluación al Cliente:** Evaluar de manera estructurada la capacidad financiera y nivel de riesgo de los clientes al solicitar un crédito. Esto se realiza con el fin de tomar decisiones informadas que garanticen la sostenibilidad financiera
+
+    ![Evaluación al Cliente](img/EvaluacionCliente.png)
+
+    - **Evaluación de Plan de Estudios:** Verificar si el solicitante cumple con los requisitos y si el plan de estudios presentado puede ser aprobado para el otorgamiento del crédito.
+
+    ![Evaluación de Plan de Estudio](img/EvaluacionPlanEstudio.png)
+
+    - **Evaluación de Inmueble:** Definir si el inmueble se encuentra dentro de los parámetros del crédito preaprobado.
+
+    ![Evaluación de Inmueble](img/EvaluacionInmueble.png)
+
+    - **Aprobación y Desembolso:** Gestionar de forma ordenada y eficiente las actividades necesarias para concretar el otorgamiento y desembolso de un crédito hipotecario, asegurando que se cumplan las condiciones estipuladas, se formalicen los compromisos contractuales, y se ejecuten los pagos correspondientes.
+
+    ![Aprobación y Desembolso](img/AprobacionDesembolso.png)
+
+En conjunto con todos estos subprocesos se realiza el proceso para el **Otorgamiento de Crédito Hipotecario**
+
+![Otorgamiento de Crédito Hipotecario](img/OtorgamientoHipotecario.png)
+
+2. **Atención de Reclamos:** Realizar el cambio de situación de las cuentas y la actualización de datos de las cuentas bancarias, que son solicitados por personas naturales, jurídicas, Entidades del Estado o Unidades Orgánicas del Banco.
+
+![Atención de Reclamos](img/SolicitudReclamo.png)
+
+3. **Apertura de Cuenta:** Realizar la apertura de cuentas bancarias a solicitud de las entidades públicas y privadas, para el personal activo, cesante, entre otros beneficiarios, así como realizar la apertura de cuentas bancarias a personas naturales o jurídicas de derecho privado.
+
+![Apertura de Cuenta](img/AperturaCuenta.png)
+
+## **Principales Servicios REST**
+
+Los servicios REST fueron documentados utilizando **OpenAPI 3.0**.
+
+### Módulo: Gestión de Solicitud de Crédito  
+**Propósito:** Crear y gestionar solicitudes de crédito de clientes.
+
+**Operaciones:**
+- `POST /solicitudes` – Crear nueva solicitud
+- `GET /solicitudes/{id}` – Obtener estado de solicitud
+- `PUT /solicitudes/{id}` – Actualizar datos
+- `DELETE /solicitudes/{id}` – Rechazar solicitud
+
+**Modelos:**
+- `SolicitudCredito`: Datos personales, tipo de crédito, monto, estado.
+
+![Solicitud de Crédito](img/GestionarSolicitudCredito.png)
+
 ---
 
-## Procesos de Negocio Modelados
+### Módulo: Evaluación de Inmuebles  
+**Propósito:** Registrar, tasar y validar propiedades para crédito hipotecario.
 
-Este proyecto implementa el modelado de procesos de negocio utilizando la notación BPMN (Business Process Model and Notation) para representar las operaciones core del Banco de la Nación.
+**Operaciones:**
+- `POST /inmuebles` – Registrar inmueble
+- `GET /inmuebles/{id}` – Obtener datos
+- `PUT /inmuebles/{id}` – Actualizar información
+- `DELETE /inmuebles/{id}` – Eliminar registro
 
-### Procesos Modelados:
-
-#### 1. **Evaluación al Cliente - Proceso de Colocaciones**
-Proceso enfocado en evaluar la capacidad financiera y nivel de riesgo de clientes solicitantes de crédito. Incluye validación de identidad, análisis de historial crediticio, verificación de ingresos y aprobación según políticas institucionales.
-
-#### 2. **Evaluación de Inmueble - Otorgamiento Crédito Hipotecario**
-Subproceso que determina si un inmueble cumple con los parámetros del crédito preaprobado. Incluye coordinación de tasación, visita al inmueble, evaluación de garantías y emisión de conformidad.
-
-#### 3. **Aprobación y Desembolso - Crédito Hipotecario**
-Gestiona las actividades desde la aprobación del crédito hipotecario hasta el desembolso final. Comprende emisión de documentos, coordinación con clientes, verificación de pagos notariales y formalización contractual.
-
-#### 4. **Atención de Reclamos en Cuenta Bancaria**
-Proceso para gestionar cambios de situación y actualización de datos en cuentas bancarias, atendiendo solicitudes de personas naturales, jurídicas y entidades estatales.
-
-#### 5. **Apertura de Cuenta**
-Proceso integral para la apertura de cuentas bancarias tanto para entidades públicas/privadas como para personas naturales y jurídicas, incluyendo validación documental y activación de productos bancarios.
-
-#### 6. **Evaluación Plan de Estudios**
-Proceso de verificación que determina si el solicitante cumple con los requisitos y si el plan de estudios presentado puede ser aprobado para el otorgamiento del crédito educativo. Incluye evaluación de solicitud, verificación de requisitos, revisión del plan de estudios y notificación de aprobación o rechazo al cliente.
+**Modelos:**
+- `Inmueble`: Dirección, tasación, documentos, estado de aprobación.
 
 ---
 
-## Objetivo del Proyecto
+### Módulo: Gestión de Créditos  
+**Propósito:** Formalizar aprobación de créditos y emitir cronogramas.
 
-Modelar y estructurar los procesos de negocio del Banco de la Nación utilizando BPMN para identificar actores involucrados, tareas críticas y flujos de información, mejorando la comprensión y optimización de las operaciones bancarias.
+**Operaciones:**
+- `POST /creditos` – Aprobar crédito
+- `PUT /creditos/{id}` – Emitir hoja de condiciones
+- `GET /creditos/{id}/cronograma` – Obtener cronograma de pagos
+
+**Modelos:**
+- `Credito`: Condiciones, plazos, cronograma, estado.
+- `Desembolso`: Datos del pago y firma de contrato.
+
+![Solicitud de Crédito](img/GestionCredito.png)
+
+## **Herramienta Swagger**
+
+1. **Gestión de Créditos**
+
+![Swagger Gestión de Crédito](img/SwaggerGestionCredito.png)
+
+2. **Gestión Inmueble**
+
+![Swagger Gestión Inmueble](img/SwaggerGestionInmueble.png)
+
+3. **Gestión de Solicitud de Crédito**
+
+![Swagger Solicitud de Crédito](img/SwaggerSolicitudCredito.png)
+
+**Repositorio GitHub de Servicios REST:**  
+🔗 [https://github.com/Natzgun/BankBpmSubsystems.git](https://github.com/Natzgun/BankBpmSubsystems.git)
